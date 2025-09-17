@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SARDAR CABLE NETWORK - Speed Test</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0a84ff">
+  <link rel="icon" href="assets/logo.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f6ff;
+      margin: 0; padding: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      height: 100vh;
+      color: #0a2f66;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    header img {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      border: 3px solid #0a84ff;
+    }
+    h1 { font-size: 22px; margin: 10px 0; color: #0a84ff; }
+    iframe {
+      border: none;
+      width: 100%; max-width: 600px;
+      height: 600px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    footer {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="SARDAR Logo">
+    <h1>SARDAR CABLE NETWORK</h1>
+    <p>Professional Speed Test</p>
+  </header>
+
+  <!-- LibreSpeed Embed -->
+  <iframe src="https://librespeed.org/speedtest/" allowfullscreen></iframe>
+
+  <footer>
+    © 2025 SARDAR CABLE NETWORK
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
